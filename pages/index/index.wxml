@@ -1,0 +1,68 @@
+<!--index.wxml-->
+<view class="search" >
+  <image src="../../img/index/icon_home_search.png" mode="aspectFit" />
+  <input type="text" placeholder="3招 ⌈跑⌋ 出魔鬼身材！点击搜索>>" auto-focus/>
+</view>
+<swiper autoplay interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{bannerImage}}" wx:key="index">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" mode="widthFix"/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="nav">
+  <navigator class="nav-item">
+    <view class="train" style="background-image:url(../../../../img/index/training.png)"></view>
+    <view>全部训练</view>
+  </navigator>
+  <navigator class="nav-item">
+    <view class="calendar" style="background-image:url(../../../../img/index/calendar.png)"></view>
+    <view>活动挑战</view>
+  </navigator>
+  <navigator class="nav-item">
+    <view class="lesson" style="background-image:url(../../../../img/index/lesson.png)"></view>
+    <view>我的课程</view>
+  </navigator>
+  <navigator class="nav-item">
+    <view class="camera" style="background-image:url(../../../../img/index/camera.png)"></view>
+    <view>社区精选</view>
+  </navigator>
+  <navigator class="nav-item">
+    <view class="land" style="background-image:url(../../../../img/index/land.png)"></view>
+    <view>keepland</view>
+  </navigator>
+  <navigator class="nav-item">
+    <view class="goods" style="background-image:url(../../../../img/index/goods.png)"></view>
+    <view>智能训练</view>
+  </navigator>
+</view>
+<view class="divider"></view>
+<view class="container">
+  <view>
+    <text class="my-tip"><text class="tip"> </text>keep 日标签</text>
+    <text class="my-lan">我说所有的酒，都不如你。</text>
+  </view>
+  <view>
+    <text class="my-day">{{time[2]}}</text>
+    <text class="my-time">{{time[1]}}.{{time[0]}}</text>
+    <text class="my-from">——《春风十里》</text>
+  </view>
+</view>
+<view class="divider"></view>
+<view class="container">
+  <view class="flex_box samll_font">
+    <text class="normal_font">已参加的课程</text>
+    <button class="my_button" >+ <text class="my_add"> 添加</text></button>
+  </view>
+  <view class="samll_font flex_box">
+    <text class="normal_font font_bold">2分钟体验课程</text>
+    <text class="span_text">2分钟 · k1</text>
+  </view>
+  <view class="samll_font flex_box">
+    <text class="normal_font font_bold" >5分钟瑜伽体验课程</text>
+    <text class="span_text">5分钟 · k1</text>
+  </view>
+  <view class="more_font">
+    查看详情
+  </view>
+</view>

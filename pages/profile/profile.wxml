@@ -1,0 +1,73 @@
+<view class="avatar">
+  <image src="http://127.0.0.1:3000/{{userlist.avatar}}" mode="aspecFill" lazy-load />
+  <view class="uname">{{userlist.uname}}</view>
+</view>
+<view class="userdata">
+  <view class="data-item">
+    <text class="info">我的数据</text>
+    <text>总运动（分钟）</text>
+    <text>{{userlist.total_time}}</text>
+  </view>
+  <view class="data-item">
+    <text>❤️</text><text class="data-fans">{{userlist.fans}}人</text><text>喜欢</text>
+  </view>
+</view>
+<view class="container">
+  <view class="keep-box">
+    <view>跑步</view>
+    <view>
+      <text class="keep-time">{{userlist.running_km}}</text><text>公里</text>
+    </view>
+  </view>
+  <view class="keep-box">
+    <view>骑行</view>
+    <view>
+      <text class="keep-time">{{userlist.ridding_km}}</text><text>公里</text>
+    </view>
+  </view>
+  <view class="keep-box">
+    <view>健身</view>
+    <view>
+      <text class="keep-time">{{userlist.fit_time}}</text><text>分钟</text>
+    </view>
+  </view>
+  <view class="keep-box">
+    <view>瑜伽</view>
+    <view>
+      <text class="keep-time">{{userlist.yoga_time}}</text><text>分钟</text>
+    </view>
+  </view>
+</view>
+<view class="divider"></view>
+<view class="cell">
+  <navigator class="cell-item arrow">
+    <text>个人资料</text>
+  </navigator>
+  <navigator class="cell-item arrow">
+    <text>我的活动</text>
+  </navigator>
+  <navigator class="cell-item arrow">
+    <text>我的 Class</text>
+  </navigator>
+  <navigator class="cell-item arrow">
+    <text>Keepland</text>
+  </navigator>
+</view>
+<view class="divider"></view>
+<view class="cell">
+  <navigator class="cell-item arrow">
+    <text>我的收藏</text>
+  </navigator>
+  <navigator class="cell-item arrow">
+    <text>我的徽章</text>
+  </navigator>
+  <navigator class="cell-item  arrow">
+    <text>我的智能设备</text>
+  </navigator>
+</view>
+<view class="divider"></view>
+<view class="cell">
+  <navigator class="cell-item  arrow">
+    <text>设置</text>
+  </navigator>
+</view>

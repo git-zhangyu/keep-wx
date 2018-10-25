@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/lesson/lesson",
+    "pages/blog/blog",
+    "pages/profile/profile",
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "keep",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath":"pages/index/index",
+        "text": "运动",
+        "iconPath": "img/tabbar/icon_nav_training_normal.png",
+        "selectedIconPath": "img/tabbar/icon_nav_training_hl.png"
+      },
+      {
+        "pagePath": "pages/lesson/lesson",
+        "text": "发现",
+        "iconPath": "img/tabbar/icon_nav_discovery_normal.png",
+        "selectedIconPath": "img/tabbar/icon_nav_discovery_hl.png"
+      },
+      {
+        "pagePath": "pages/blog/blog",
+        "text": "社区",
+        "iconPath": "img/tabbar/icon_nav_follow_normal.png",
+        "selectedIconPath": "img/tabbar/icon_nav_follow_hl.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我",
+        "iconPath": "img/tabbar/icon_nav_me_normal.png",
+        "selectedIconPath": "img/tabbar/icon_nav_me_hl.png"
+      }
+    ]
+  }
+}

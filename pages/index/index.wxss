@@ -1,0 +1,169 @@
+/**index.wxss**/
+page{
+  background-color: #f1f1f1;
+}
+.search{
+  padding: 20rpx 20rpx 10rpx;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  position: relative;
+}
+.search>image{
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  top: 15rpx;
+  left: 15rpx;
+}
+.search>input{
+  border-radius: 10rpx;
+  padding-left: 70rpx;
+  background-color: #EEEFF3;
+  width: 100%;
+}
+.slide-image{
+  width: 95%;
+  border-radius: 20rpx;
+}
+swiper{
+  height: 350rpx;
+  background-color: #fff;
+}
+swiper-item{
+  height: 350rpx;
+  text-align: center;
+}
+/* 导航样式*/
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #fff
+}
+.nav-item{
+  width: 33.333%;
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: #584f60;
+}
+.nav-item>view:first-child{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  background-position: center center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  margin-bottom: 20rpx;
+}
+.nav .nav-item .train{
+  background-size: 70%;
+  background-color: #5F7BC7;
+}
+.nav .nav-item .calendar {
+  background-color: #D05360;
+}
+.nav .nav-item .lesson{
+  background-size: 60%;
+  background-color: #7E6BD7;
+}
+.nav .nav-item .camera{
+  background-size:60%;
+  background-color: #806BD4;
+}
+.nav .nav-item .land{
+  background-size:45%;
+  background-color: #46CDAE;
+}
+.nav .nav-item .goods{
+  background-color: #CFC677;
+}
+/*tips 样式*/
+.container{
+  padding: 16rpx;
+  margin: 16rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+}
+.container .tip{
+  width: 10rpx;
+  height: 30rpx;
+  background-color: #6492D2;
+  display: inline-block;
+  position: absolute;
+  top:3rpx;
+  left: 0;
+}
+.container .my-tip {
+  font-size: 12px;
+  color: #939393;
+  padding-right: 200rpx;
+  position: relative;
+  padding-left: 20rpx;
+}
+.container .my-lan {
+  font-size: 13px;
+  color: #6B6B6B;
+  padding-bottom: 20rpx;
+}
+.container .my-day {
+  font-size: 30px;
+  padding-right: 10rpx;
+  font-weight: 800;
+}
+.container .my-time {
+  font-size: 14px;
+  font-weight: 600;
+}
+.container .my-from {
+  font-size: 12px;
+  color: #939393;
+  float: right;
+  line-height: 84rpx;
+}
+/*参加的课程*/
+.flex_box {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20rpx;
+}
+.samll_font {
+  font-size: 10px;
+  color: #88828E;
+  padding-left: 10rpx;
+  padding-right: 20rpx;
+}
+.normal_font {
+  font-size: 12px;
+  color: #000;
+}
+.my_button {
+  background-color: #24C789;
+  border-radius: 30rpx;
+  color: #fff;
+  font-size: 12px;
+  width: 150rpx;
+  height: 50rpx;
+  padding: 0;
+  margin: 0;
+}
+
+.font_bold {
+  font-weight: 600;
+}
+.span_text {
+  width: 150rpx;
+  height: 50rpx;
+  text-align: center;
+}
+.more_font {
+  font-size: 14px;
+  text-align: center;
+  padding-top: 20rpx;
+  color: #584F60;
+}
