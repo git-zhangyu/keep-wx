@@ -22,9 +22,9 @@
       },
       {
         "pagePath": "pages/lesson/lesson",
-        "text": "发现",
+        "text": "课程",
         "iconPath": "img/tabbar/icon_nav_discovery_normal.png",
-        "selectedIconPath": "img/tabbar/icon_nav_discovery_hl.png"
+        "selectedIconPath":"img/tabbar/icon_nav_discovery_hl.png"
       },
       {
         "pagePath": "pages/blog/blog",

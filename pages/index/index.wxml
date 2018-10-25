@@ -12,27 +12,28 @@
 </swiper>
 <view class="nav">
   <navigator class="nav-item">
-    <view class="train" style="background-image:url(../../../../img/index/training.png)"></view>
+    <view class="train" style="background-image:url({{navBg[0]}})">
+    </view>
     <view>全部训练</view>
   </navigator>
   <navigator class="nav-item">
-    <view class="calendar" style="background-image:url(../../../../img/index/calendar.png)"></view>
+    <view class="calendar" style="background-image:url({{navBg[1]}})"></view>
     <view>活动挑战</view>
   </navigator>
   <navigator class="nav-item">
-    <view class="lesson" style="background-image:url(../../../../img/index/lesson.png)"></view>
+    <view class="lesson" style="background-image:url({{navBg[2]}})"></view>
     <view>我的课程</view>
   </navigator>
   <navigator class="nav-item">
-    <view class="camera" style="background-image:url(../../../../img/index/camera.png)"></view>
+    <view class="camera" style="background-image:url({{navBg[3]}})"></view>
     <view>社区精选</view>
   </navigator>
   <navigator class="nav-item">
-    <view class="land" style="background-image:url(../../../../img/index/land.png)"></view>
+    <view class="land" style="background-image:url({{navBg[4]}})"></view>
     <view>keepland</view>
   </navigator>
   <navigator class="nav-item">
-    <view class="goods" style="background-image:url(../../../../img/index/goods.png)"></view>
+    <view class="goods" style="background-image:url({{navBg[5]}})"></view>
     <view>智能训练</view>
   </navigator>
 </view>

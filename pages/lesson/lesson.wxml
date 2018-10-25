@@ -1,2 +1,18 @@
-<!--pages/lesson/lesson.wxml-->
-<text>pages/lesson/lesson.wxml</text>
+<view style="height:1200px;">
+  <view class="nav">
+    <view bindtap="selHard">{{hard}}<text class="p-10  {{sel1?'up':''}}">▾</text></view>
+    <view bindtap="selBody">筛选{{selNum}}<text class="p-10  {{sel2?'up':''}}">▾</text></view>
+  </view>
+  <view class="{{sel1?'show':'hide'}}" bindtap="sel1Ctd">
+    <view class="selhard {{s[0]?'active':''}}"><view>综合排序</view><image src="{{s[0]?selected:white}}"></image></view>
+    <view class="selhard {{s[1]?'active':''}}"  data-hard="k1零基础"><view>k1零基础</view><image src="{{s[1]?selected:white}}"></image></view>
+    <view class="selhard {{s[2]?'active':''}}"  data-hard="k2初学"><view>k2初学</view><image src="{{s[2]?selected:white}}"></image></view>
+    <view class="selhard {{s[3]?'active':''}}"  data-hard="k3进阶"><view>k3进阶</view><image src="{{s[3]?selected:white}}"></image></view>
+    <view class="selhard {{s[4]?'active':''}}"  data-hard="k4强化"><view>k4强化</view><image src="{{s[4]?selected:white}}"></image></view>
+    <view class="selhard {{s[5]?'active':''}}"  data-hard="k5挑战"><view>k5挑战</view><image src="{{s[4]?selected:white}}"></image></view>
+  </view>
+</view>
+<view class="totop" wx:if="{{toTop}}" bindtap="toTop">
+  <image src="../../img/tabbar/icon_nav_discovery_back_top.png" />
+  <view>回到顶部</view>
+</view>

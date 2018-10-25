@@ -9,8 +9,8 @@ Page({
     autoplay: true,
     interval: 4000,
     duration: 1000,
-    time:""
-
+    time:"",
+    navBg: ['../../../../img/index/training.png', '../../../../img/index/calendar.png', '../../../../img/index/lesson.png', '../../../../img/index/camera.png', '../../../../img/index/land.png', '../../../../img/index/goods.png']
   },
 
   /**
