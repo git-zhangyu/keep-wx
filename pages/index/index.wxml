@@ -11,7 +11,7 @@
   </block>
 </swiper>
 <view class="nav">
-  <navigator class="nav-item">
+  <navigator class="nav-item" url="lesson/lesson">
     <view class="train" style="background-image:url({{navBg[0]}})">
     </view>
     <view>全部训练</view>

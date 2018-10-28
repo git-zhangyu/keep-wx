@@ -1,0 +1,23 @@
+<view>
+  <image class="bg-image" src="http://127.0.0.1:3000/{{list.lesson_list_pic}}" mode="widthFix" lazy-load></image>
+  <view class="info">
+    <view>{{list.subtitle}}</view>
+    <view class="num">{{list.train_num}}人已参加</view>
+    <view class="info-desc">
+      <view>
+        <view>训练</view>
+        <text class="normal-text">{{list.hord*8}}</text><text>节</text>
+      </view>
+      <view>
+        <view>平均</view>
+        <text class="normal-text">{{list.hord*16}}</text><text>分钟</text>
+      </view>
+      <view>
+        <view>难度</view>
+        <text class="normal-text">K{{list.hord}}</text>
+      </view>
+    </view>
+    <view class="isTrain?'istrain':'nottrain'">{{isTrain?"已参加训练":"参加训练"}}</view>
+  </view>
+  <view class="mask"></view>
+</view>

@@ -1,0 +1,28 @@
+<view class="desc">
+  <text>课程分类 - {{lessonlist[0].title}}</text>
+  <text>共{{lessonlist.length}}个课程</text>
+</view>
+<view class="list-container">
+  <view class="list-box" wx:for="{{lessonlist}}" wx:key="lid">
+    <view class="image-box">
+      <image class="list-img" src="http://127.0.0.1:3000/{{item.lesson_list_pic}}" mode="aspectFill" lazy-load></image>
+      <view class="mask1"></view>
+      <view class="mask2" data-lid="{{item.lid}}" bindtap="getlessonDetail"></view>
+    </view>
+    <view>
+      <view class="info">
+        <view>{{item.subtitle}}</view>
+        <view>{{item.hord}} 节<text>{{item.train_body}}</text></view>
+      </view>
+    </view>
+    <view class="list-hard">
+      <view>K{{item.hord}}
+        <image wx:for="{{item.hord}}" wx:key="index" src="../../../img/tabbar/icon_nav_training_hl.png"></image>
+        <image wx:for="{{5-item.hord}}"  wx:key="index" src="../../../img/tabbar/icon_nav_training_normal.png"></image>
+      </view>
+      <view>
+        {{item.train_num}}人训练
+      </view>
+    </view>
+  </view>
+</view>

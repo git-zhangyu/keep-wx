@@ -1,9 +1,13 @@
 {
   "pages": [
-    "pages/lesson/lesson",
+    "pages/lessondetail/lessondetail",
+    "pages/lessonFamily/lessonFamily",
+    "pages/lessonFamily/lessonList/lessonList",
+    "pages/index/lesson/lesson",
     "pages/blog/blog",
     "pages/profile/profile",
-    "pages/index/index"
+    "pages/index/index",
+    "pages/index/mylesson/mylesson"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -15,16 +19,16 @@
     "backgroundColor": "#fff",
     "list": [
       {
-        "pagePath":"pages/index/index",
+        "pagePath": "pages/index/index",
         "text": "运动",
         "iconPath": "img/tabbar/icon_nav_training_normal.png",
         "selectedIconPath": "img/tabbar/icon_nav_training_hl.png"
       },
       {
-        "pagePath": "pages/lesson/lesson",
+        "pagePath": "pages/lessonFamily/lessonFamily",
         "text": "课程",
         "iconPath": "img/tabbar/icon_nav_discovery_normal.png",
-        "selectedIconPath":"img/tabbar/icon_nav_discovery_hl.png"
+        "selectedIconPath": "img/tabbar/icon_nav_discovery_hl.png"
       },
       {
         "pagePath": "pages/blog/blog",

@@ -1,0 +1,16 @@
+<!--pages/lessonFamily/lessonFamily.wxml-->
+<view class="title">
+  课程分类
+  <view class="title-info">丰富的训练课程，规范你的训练过程</view>
+</view>
+<view class="lesson-container">
+  <view class="lesson-box" wx:for="{{familyList}}" wx:key="index">
+    <image class="lesson-image" src="http://127.0.0.1:3000/{{item.lesson_pic}}" lazy-load/>
+    <view class="class-info">
+      <view>{{item.lesson_name}}</view>
+      <view class="total">{{item.total}}个课程</view>
+    </view>
+    <view class="mask1"></view>
+    <view class="mask2" data-familyid="{{item.family_id}}" bindtap="navTo"></view>
+  </view>
+</view>

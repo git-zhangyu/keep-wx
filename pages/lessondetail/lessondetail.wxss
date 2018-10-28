@@ -1,0 +1,48 @@
+.bg-image{
+  width: 100%;
+  z-index: 1;
+}
+.info{
+  color: #fff;
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+  position: absolute;
+  top: 200rpx;
+  left: 0;
+  z-index: 3;
+}
+.info-desc{
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  padding: 30rpx 20rpx;
+}
+
+.normal-text{
+  font-size: 20px;
+}
+.normal-text>text{
+  font-size: 12px;
+}
+.num{
+  padding-top: 20rpx;
+  padding-bottom: 100rpx;
+  color: #eee;
+  font-size: 12px;
+}
+.istrain{
+  font-size: 20px;
+  margin: 20rpx;
+  padding: 20rpx 0;
+  background-color: #00CF8A;
+}
+.mask{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.1);
+  z-index: 2;
+}

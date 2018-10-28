@@ -1,0 +1,61 @@
+<view>
+  <view class="nav">
+    <view bindtap="selHard">{{hardSle}}<text class="p-10  {{sel1?'up':''}}">▾</text></view>
+    <view bindtap="selBody">筛选{{selNum}}<text class="p-10  {{sel2?'up':''}}">▾</text></view>
+  </view>
+  <view class="sel {{sel1?'showSlow':''}}" bindtap="sel1Ctd">
+    <view class="selhard {{s[0]?'active':''}}" bindtap="selectAll"  data-hard="k0综合排序">综合排序<image src="{{selected}}" wx:if="{{s[0]}}"></image></view>
+    <view class="selhard {{s[1]?'active':''}}"   data-hard="k1零基础">k1零基础<image lazy-load src="{{selected}}" wx:if="{{s[1]}}"></image></view>
+    <view class="selhard {{s[2]?'active':''}}"  data-hard="k2初学">k2初学<image lazy-load src="{{selected}}" wx:if="{{s[2]}}"></image></view>
+    <view class="selhard {{s[3]?'active':''}}"  data-hard="k3进阶">k3进阶<image lazy-load src="{{selected}}" wx:if="{{s[3]}}"></image></view>
+    <view class="selhard {{s[4]?'active':''}}"  data-hard="k4强化">k4强化<image lazy-load src="{{selected}}" wx:if="{{s[4]}}"></image></view>
+    <view class="selhard {{s[5]?'active':''}}"  data-hard="k5挑战">k5挑战<image lazy-load src="{{selected}}" wx:if="{{s[5]}}"></image></view>
+  </view>
+  <view class="sel {{sel2?'showSlow':''}}" bindtap="sel2Ctd">
+    <view class="traBody">部位</view>
+    <view class="bodySle">
+      <view data-train="全身0" class="{{b[0]==1?'selBg':''}}">全身</view>
+      <view data-train="胸部1" class="{{b[1]==1?'selBg':''}}">胸部</view>
+      <view data-train="腹部2" class="{{b[2]==1?'selBg':''}}">腹部</view>
+      <view data-train="腿部3" class="{{b[3]==1?'selBg':''}}">腿部</view>
+      <view data-train="臀部4" class="{{b[4]==1?'selBg':''}}">臀部</view>
+      <view data-train="背部5" class="{{b[5]==1?'selBg':''}}">背部</view>
+      <view data-train="肩部6" class="{{b[6]==1?'selBg':''}}">肩部</view>
+      <view data-train="手臂7" class="{{b[7]==1?'selBg':''}}">手臂</view>
+      <view data-train="腰部8" class="{{b[8]==1?'selBg':''}}">腰部</view>
+      <view data-train="颈部9" class="{{b[9]==1?'selBg':''}}">颈部</view>
+    </view>
+    <view class="traBody">方法</view>
+    <view class="bodySle">
+      <view data-train="健身10" class="{{b[10]==1?'selBg':''}}">健身</view>
+      <view data-train="跑步11" class="{{b[11]==1?'selBg':''}}">跑步</view>
+      <view data-train="瑜伽12" class="{{b[12]==1?'selBg':''}}">瑜伽</view>
+      <view data-train="燃脂13" class="{{b[13]==1?'selBg':''}}">燃脂</view>
+    </view>
+    <view class="selBtn">
+      <view bindtap="sel2Clear">重置</view>
+      <view bindtap="sel2Srh">确定</view>
+    </view>
+  </view>
+  <view class="lesson-container">
+    <view class="lesson-box" wx:for="{{lessonList}}" wx:key="lid">
+      <image src="http://127.0.0.1:3000/{{item.lesson_list_pic}}" mode="aspectFill" class="lesson-image" lazy-load></image>
+      <view class="lesson-info">
+        <view class="subtitle">{{item.subtitle}}</view>
+        <view class="train-num">{{item.train_num}}  <text>  人已参加训练</text></view>
+        <view class="train-hard">
+          <text>K{{item.hord}} </text>
+          <text> {{item.hord==1?"零基础":item.hord==2?"初学":item.hord==3?"进阶":item.hord==4?"强化":"挑战"}}</text>
+          <text>{{lessonTime}}</text>
+          <text>分钟</text>
+        </view>
+        <view class="mask1"></view>
+        <view class="mask2" bindtap="getDetails" data-lid="{{item.lid}}"></view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="totop" wx:if="{{toTop}}" bindtap="toTop">
+  <image src="../../img/tabbar/icon_nav_discovery_back_top.png" lazy-load/>
+  <view>回到顶部</view>
+</view>
